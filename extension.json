@@ -1,0 +1,13 @@
+{
+  "name": "ADBMS6830 SPI",
+  "apiVersion": "1.0.0",
+  "author": "atopile",
+  "version": "0.0.1",
+  "description": "Parse commands and data from ADBMS6830 SPI",
+  "extensions": {
+    "ADBMS6830 SPI": {
+      "type": "HighLevelAnalyzer",
+      "entryPoint": "HighLevelAnalyzer.Hla"
+    }
+  }
+}
