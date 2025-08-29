@@ -1,13 +1,20 @@
+# ADBMS6830 SPI
 
-  # ADBMS6830 SPI
-  
-## Getting started
+ADBMS6830 SPI high level analyzer to label SPI traffic between controller and ADBMS6830 or ADBMS6822 isoSPI XCVR.
 
-1. Build your extension by updating the Python files for your needs
-2. Create a public Github repo and push your code 
-3. Update this README
-4. Open the Logic app and publish your extension
-5. Create a Github release
-6. Debug your hardware like you've never done before :)
+## Features
+* Command name parsing
+* Command PEC validation
+* Data parsing, ASIC #, Cell #, and voltage
+* Data PEC validation
 
-  
+## Setup
+* Add standard SPI analyzer
+* SPI settings
+  * MSB
+  * CPOL=1
+  * CPHA=1
+  * CS active low
+* Add ADBMS6830 high level analyzer and configure with SPI
+
+![Example](https://raw.githubusercontent.com/atopile/adbms6830-saleae-analyzer/refs/heads/main/sample_voltage.png)

@@ -168,10 +168,8 @@ Adbms6948_Crc10Table: Tuple[int, ...] = (
 
 # High level analyzers must subclass the HighLevelAnalyzer class.
 class Hla(HighLevelAnalyzer):
-    # List of settings that a user can set for this High Level Analyzer.
-    my_string_setting = StringSetting()
-    my_number_setting = NumberSetting(min_value=0, max_value=100)
-    my_choices_setting = ChoicesSetting(choices=("A", "B"))
+    # TODO: enable raw output option
+    # parse_output = ChoicesSetting(choices=("Parsed", "Raw"))
 
     # An optional list of types this analyzer produces, providing a way to customize the way frames are displayed in Logic 2.
     result_types = {
